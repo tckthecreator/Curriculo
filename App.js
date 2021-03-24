@@ -28,6 +28,18 @@ const App = () => {
             </View>
           </View>
         </View>
+        <View style={styles.container_container_cards}>
+          <View style={styles.container_cards}>
+            <View style={styles.header_card}>
+              <Text style={styles.text_headercard2}>Habilidades</Text>
+            </View>
+
+            <View style={styles.content_card}>
+              <Text style={styles.text_contentcard}>JavaScript</Text>
+              <Text style={styles.text_contentcard}>React Native</Text>
+            </View>
+          </View>
+        </View>
       </View>
     </>
   );
@@ -64,9 +76,13 @@ const styles = StyleSheet.create({
     borderColor: '#939393',
   },
   header_card: {
-    paddingTop: 10
+    paddingTop: 10,
+    justifyContent: 'center'
   },
   content_card: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
     paddingTop: 20,
     paddingHorizontal: 20,
   },
@@ -94,6 +110,11 @@ const styles = StyleSheet.create({
   },
   text_headercard: {
     marginStart: 80,
+    fontWeight: 'bold',
+    fontSize: 20,
+  },
+  text_headercard2: {
+    marginStart: 120,
     fontWeight: 'bold',
     fontSize: 20,
   },
