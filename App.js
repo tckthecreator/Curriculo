@@ -7,14 +7,25 @@ const App = () => {
   return (
     <>
       <View style={styles.page} >
-        <View style={styles.containerperfil} >
+        <View style={styles.container_perfil} >
           <Image source={perfil} style={styles.imageperfil} />
           <Text style={styles.name_style}>Victor Souza</Text>
           <Text style={styles.role}>Desenvolvedor Mobile</Text>
-          <View style={styles.containericons}>
+          <View style={styles.container_icons}>
             <Icon style={styles.icons} name='github' size={24}/>
             <Icon style={styles.icons} name='twitter' size={24}/>
             <Icon style={styles.icons} name='linkedin' size={24}/>
+          </View>
+        </View>
+        <View style={styles.container_container_cards}>
+          <View style={styles.container_cards}>
+            <View style={styles.header_card}>
+              <Text style={styles.text_headercard}>Formação Acadêmica</Text>
+            </View>
+
+            <View style={styles.content_card}>
+              <Text style={styles.text_contentcard}>Graduando em Ciência da Computação na Universidade Estácio de Sá</Text>
+            </View>
           </View>
         </View>
       </View>
@@ -23,29 +34,51 @@ const App = () => {
 }
 
 const styles = StyleSheet.create({
+  
   // Containers
   page: {
     backgroundColor: '#E7E7E7',
     flex: 1,
+    alignItems: 'center',
   },
-  containerperfil: {
+  container_perfil: {
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 45
   },
-  containericons: {
+  container_icons: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 0.5,
+    marginTop: 12,
+  },
+  container_container_cards: {
+    justifyContent: 'flex-start',
+    alignItems: 'baseline',
+  }, 
+  container_cards: {
+    marginTop: 20,
+    width: 360,
+    height: 125,
+    borderRadius: 5,
+    borderWidth: 2,
+    borderColor: '#939393',
+  },
+  header_card: {
+    paddingTop: 10
+  },
+  content_card: {
+    paddingTop: 20,
+    paddingHorizontal: 20,
   },
   
   // Componentes
   icons: {
-    paddingHorizontal: 10.75,
+    paddingHorizontal: 16,
   },
   imageperfil: {
-    width: 125,
-    height: 125,
-    borderRadius: 70,
+    width: 140,
+    height: 140,
+    borderRadius: 120,
   },
   name_style: {
     fontSize: 25,
@@ -54,10 +87,20 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   role: {
-    color: '#939393',
-    fontSize: 15,
-    fontWeight: '300',
-    marginBottom: 10,
+    color: '#686262',
+    fontSize: 16,
+    fontWeight: '600',
+    marginTop: 2,
+  },
+  text_headercard: {
+    marginStart: 80,
+    fontWeight: 'bold',
+    fontSize: 20,
+  },
+  text_contentcard: {
+    fontSize: 16.75,
+    fontWeight: '500',
+    color: '#686262',
   },
 }); 
 
