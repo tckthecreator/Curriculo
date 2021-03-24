@@ -1,5 +1,5 @@
 # Curriculo
-Um aplicativo de currículo simples.
-A CV App pretty simple.
+<>Um aplicativo de currículo simples.</>
+<>A CV App pretty simple.</>
 
-by: Victor DSouza
+<>by: Victor DSouza</>
