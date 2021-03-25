@@ -13,7 +13,7 @@ const App = () => {
         Alert.alert('Meu Twitter', 'https://twitter.com/tckthecreator');
         break;
       case 'github':
-          Alert.alert('Meu GitHub', 'https://github.com/tckthecreator')
+          Alert.alert('Meu GitHub', 'https://github.com/tckthecreator');
           break;
     }
   }
@@ -45,7 +45,7 @@ const App = () => {
         <View style={styles.container_container_cards}>
           <View style={styles.container_cards}>
             <View style={styles.header_card}>
-              <Text style={styles.text_headercard2}>Habilidades</Text>
+              <Text style={styles.text_headercard}>Habilidades</Text>
             </View>
 
             <View style={styles.content_card}>
@@ -123,12 +123,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   text_headercard: {
-    marginStart: 80,
-    fontWeight: 'bold',
-    fontSize: 20,
-  },
-  text_headercard2: {
-    marginStart: 120,
+    alignSelf: 'center',
     fontWeight: 'bold',
     fontSize: 20,
   },
