@@ -4,22 +4,9 @@ import perfil from '../assets/perfil.jpeg';
 import Icon from 'react-native-vector-icons/Feather';
 import Cards from './Card';
 import styles from './styles'
+import handleicon from './Linking'
 
 const App = () => {
-  function handleicon(social_network) {
-    switch (social_network) {
-      case 'linkedin':
-        Alert.alert('Meu Linkedin', 'https://www.linkedin.com/in/victor-souza-492765204/');
-        break;
-      case 'twitter':
-        Alert.alert('Meu Twitter', 'https://twitter.com/tckthecreator');
-        break;
-      case 'github':
-          Alert.alert('Meu GitHub', 'https://github.com/tckthecreator');
-          break;
-    }
-  }
-  
   return (
     <>
       <View style={styles.page} >
